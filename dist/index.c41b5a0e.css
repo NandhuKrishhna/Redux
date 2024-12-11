@@ -186,4 +186,11 @@ form button {
   left: 50%;
   transform: translate(-40%, -90%);
 }
+
+.remove-btn {
+  cursor: pointer;
+  background: #ad4343;
+  border-radius: 5px;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=index.c41b5a0e.css.map */

@@ -1,14 +1,16 @@
 import { combineReducers, createStore } from 'redux'
-import productsReducer from './productsReducer'
+import productsReducer from '../slices/productsReducer'
 import cartReducer, {
   addCartItem,
   decreaseCartItemQuantity,
   increaseCartItemQuantity,
-} from './cartReducer'
+} from '../slices/cartSlice'
 import wishListReducer, {
   addWishListItem,
   removeWishListItem,
-} from './wishListReducer'
+} from '../slices/wiishListSlice'
+import { produce } from 'immer'
+
 
 const reducer = combineReducers({
   products: productsReducer,
@@ -35,4 +37,5 @@ export const store = createStore(
 // store.dispatch(addWishListItem(11))
 
 // store.dispatch(removeWishListItem(11))
-// store.dispatch(removeWishListItem(18))
+// store.dispatch(removeWishListItem(18));
+

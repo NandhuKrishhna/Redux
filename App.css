@@ -187,3 +187,12 @@ form button {
   left: 50%;
   transform: translate(-40%, -90%);
 }
+
+.remove-btn{
+  background: rgb(173, 67, 67);
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+
